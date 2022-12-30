@@ -11,6 +11,7 @@ Tefas shares investment fund's daily records, but they don't have a public API.
 Thus, in order to code my personalised dashboard, I need to import the data I need from Tefas website.
 Thankfully, they provide data in csv format. 
 In this project, I'll take that csv manually and parse it to my MySql database.
+I stored my MySql database info in resources/config.properties that is not on Github so create one for yourselves.
 
 Tefas website that I'll use as source csv:
 https://www.tefas.gov.tr/TarihselVeriler.aspx

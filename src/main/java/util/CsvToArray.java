@@ -20,7 +20,7 @@ public class CsvToArray {
         DecimalFormat d = new DecimalFormat("", new DecimalFormatSymbols(Locale.ITALIAN));
         try
         {
-            InputStream is = getClass().getClassLoader().getResourceAsStream("TefasAralik.csv");
+            InputStream is = getClass().getClassLoader().getResourceAsStream("TefasData.csv");
             assert is != null;
             reader = new CSVReader(new InputStreamReader(is));
             String [] nextLine;

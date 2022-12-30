@@ -18,13 +18,22 @@
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
+            <version>5.7.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-maven-plugin</artifactId>
+            <version>1.18.20.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.31</version>
+        </dependency>
+
     </dependencies>
 
 </project>
