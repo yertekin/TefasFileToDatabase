@@ -1,7 +1,7 @@
 package util;
 
-import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,14 +13,15 @@ import java.util.Properties;
  */
 public class MySqlJdbcUtil {
 
-    public static Connection getConnection() throws SQLException {
+    public Connection getConnection() throws SQLException {
         Connection conn = null;
+        InputStream is;
 
-        try (FileInputStream f = new FileInputStream("config.properties")) {
-
+        try{
+            is = getClass().getClassLoader().getResourceAsStream("config.properties");
             // load the properties file
             Properties pros = new Properties();
-            pros.load(f);
+            pros.load(is);
 
             // assign db parameters
             String url = pros.getProperty("db.url");

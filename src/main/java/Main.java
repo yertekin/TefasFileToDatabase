@@ -10,7 +10,7 @@ public class Main {
         InsertFundDetailList insertFundDetailList = new InsertFundDetailList();
         List<FundDetail> fundDetailList = csvToArray.readCSV();
         for (FundDetail fund:fundDetailList) {
-            System.out.println(fund.toString());
+            insertFundDetailList.insertFundPrices(fund);
         }
     }
 }
